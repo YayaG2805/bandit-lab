@@ -74,3 +74,19 @@ Dentro del directorio inhere había múltiples archivos. Usando file ./* se iden
 
 Contraseña obtenida:
 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+## Bandit Level 5
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel (bandit6).
+
+**Comandos utilizados:**
+```bash
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+ls
+cd inhere
+find . -type f -size 1033c
+cat ./maybehere07/.file2
+Explicación:
+Se buscó dentro de inhere un archivo regular con tamaño exacto de 1033 bytes usando find. El archivo encontrado fue ./maybehere07/.file2 (oculto por el punto inicial), y al leerlo con cat se obtuvo la contraseña.
+
+Contraseña obtenida:
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
