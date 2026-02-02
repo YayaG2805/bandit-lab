@@ -130,3 +130,16 @@ Se ordenó el archivo data.txt con sort y luego se utilizó uniq -u para mostrar
 
 Contraseña obtenida:
 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+## Bandit Level 9
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel (bandit10).
+
+**Comandos utilizados:**
+```bash
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+strings data.txt
+Explicación:
+El archivo data.txt contenía datos con caracteres no imprimibles. Se utilizó strings (comando incluido en la lista del laboratorio) para extraer únicamente las secuencias de texto legible. Dentro de esa salida se identificó la contraseña del siguiente nivel.
+
+Contraseña obtenida:
+FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
