@@ -143,3 +143,18 @@ El archivo data.txt contenía datos con caracteres no imprimibles. Se utilizó s
 
 Contraseña obtenida:
 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+## Bandit Level 10
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel (bandit11).
+
+**Comandos utilizados:**
+```bash
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+ls
+cat data.txt
+base64 -d data.txt
+Explicación:
+Se verificó el archivo disponible y se leyó data.txt. Como la información estaba codificada en Base64, se utilizó base64 -d (comando incluido en la lista del laboratorio) para decodificar el contenido y obtener la contraseña del siguiente nivel.
+
+Contraseña obtenida:
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
