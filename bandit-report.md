@@ -90,3 +90,17 @@ Se buscó dentro de inhere un archivo regular con tamaño exacto de 1033 bytes u
 
 Contraseña obtenida:
 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+## Bandit Level 6
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel (bandit7).
+
+**Comandos utilizados:**
+```bash
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
+Explicación:
+Se utilizó find (comando incluido en la lista del laboratorio) para buscar en todo el sistema un archivo que cumpliera con: propietario bandit7, grupo bandit6 y tamaño exacto de 33 bytes. Se redirigieron los errores a /dev/null para evitar mensajes de permisos. Luego se leyó el archivo encontrado con cat para obtener la contraseña.
+
+Contraseña obtenida:
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
