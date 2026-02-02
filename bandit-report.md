@@ -41,3 +41,19 @@ El nombre del archivo contenía espacios y comenzaba con guiones (--), lo que ha
 
 Contraseña obtenida:
 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+## Bandit Level 3
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel (bandit4).
+
+**Comandos utilizados:**
+```bash
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+ls
+cd inhere
+ls -la
+cat ...Hiding-From-You
+Explicación:
+Se ingresó al directorio inhere y se listaron los archivos. La contraseña estaba en un archivo con nombre “oculto” mediante puntos (...Hiding-From-You), por lo que se leyó directamente con cat.
+
+Contraseña obtenida:
+2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
