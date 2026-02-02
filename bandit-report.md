@@ -27,3 +27,17 @@ El archivo que contenía la contraseña tenía como nombre un guion (-). Para ev
 
 Contraseña obtenida:
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+## Bandit Level 2
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel (bandit3).
+
+**Comandos utilizados:**
+```bash
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+ls
+cat "./--spaces in this filename--"
+Explicación:
+El nombre del archivo contenía espacios y comenzaba con guiones (--), lo que hacía que cat lo interpretara como una opción. Para evitarlo, se usó la ruta relativa ./ y se encerró el nombre del archivo entre comillas.
+
+Contraseña obtenida:
+MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
