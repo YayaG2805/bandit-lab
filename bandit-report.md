@@ -117,3 +117,16 @@ Se utilizó grep (comando incluido en la lista del laboratorio) para buscar dent
 
 Contraseña obtenida:
 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+## Bandit Level 8
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel (bandit9).
+
+**Comandos utilizados:**
+```bash
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+sort data.txt | uniq -u
+Explicación:
+Se ordenó el archivo data.txt con sort y luego se utilizó uniq -u para mostrar únicamente la línea que aparece una sola vez. Esa línea correspondía a la contraseña del siguiente nivel. Ambos comandos forman parte de los comandos Unix esenciales solicitados en el laboratorio.
+
+Contraseña obtenida:
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
