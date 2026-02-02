@@ -104,3 +104,16 @@ Se utilizó find (comando incluido en la lista del laboratorio) para buscar en t
 
 Contraseña obtenida:
 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+## Bandit Level 7
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel (bandit8).
+
+**Comandos utilizados:**
+```bash
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+grep millionth data.txt
+Explicación:
+Se utilizó grep (comando incluido en la lista del laboratorio) para buscar dentro del archivo data.txt la línea que contenía la palabra clave millionth. En esa misma línea se encontraba la contraseña del siguiente nivel.
+
+Contraseña obtenida:
+dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
