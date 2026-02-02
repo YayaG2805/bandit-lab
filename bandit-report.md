@@ -57,3 +57,20 @@ Se ingresó al directorio inhere y se listaron los archivos. La contraseña esta
 
 Contraseña obtenida:
 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+## Bandit Level 4
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel (bandit5).
+
+**Comandos utilizados:**
+```bash
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+ls
+cd inhere
+ls -la
+file ./*
+cat ./-file07
+Explicación:
+Dentro del directorio inhere había múltiples archivos. Usando file ./* se identificó cuál era de tipo texto legible (ASCII). Ese archivo fue -file07, el cual contenía la contraseña.
+
+Contraseña obtenida:
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
